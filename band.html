@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <aside>
+            <figure>
+                <img src="logow.png" id="logo" alt="logo">
+            </figure>
+            <img src="menu.svg" id="menuimg" alt="menu">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="biography.html">Biography</a></li>
+                    <li><a href="band.html">The Band</a></li>
+                    <li><a href="discography.html">Discography</a></li>
+                    <li><a href="tour.html">Tour</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main>
+            <h1>
+                The Band
+            </h1>
+            <div id="band">
+                <img src="promo.jpg" alt="Promo">
+            </div>
+            <div id="banddesc">
+                <h3>From left to right:</h3>
+                <ul>
+                    <li>Eemil Lähteenmäki: keyboards</li>
+                    <li>Pekka Olkkonen: lead guitar</li>
+                    <li>Antti Hyyrynen: vocals, rhytm guitar</li>
+                    <li>Teppo Velin: drums</li>
+                    <li>Kai-Pekka Kangasmäki: bass</li>
+                </ul>
+            </div>
+        </main>
+        <script>
+            (function() {
+                var menu = document.querySelector('nav ul'),
+                    menulink = document.querySelector('#menuimg');
+
+                menulink.addEventListener('click', function(e) {
+                    menu.classList.toggle('active');
+                    e.preventDefault();
+                });
+            })();
+        </script>
+    </body>
+</html>
