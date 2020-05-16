@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <aside>
+            <figure>
+                <img src="logow.png" id="logo" alt="logo">
+            </figure>
+            <img src="menu.svg" id="menuimg" alt="menu">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Biography</a></li>
+                    <li><a href="band.html">The Band</a></li>
+                    <li><a href="discography.html">Discography</a></li>
+                    <li><a href="tour.html">Tour</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main>
+            <h1>
+                Discography
+            </h1>
+            <div class="albums">
+                <figure>
+                    <img src="taival.jpg" alt="Taival">
+                    <figcaption>Taival (2018)</figcaption>
+                </figure>
+                <figure>
+                    <img src="elokuutio.jpg" alt="Elokuutio">
+                    <figcaption>Elokuutio (2016)</figcaption>
+                </figure>
+                <figure>
+                    <img src="slk.jpg" alt="SLK">
+                    <figcaption>SLK (2014)</figcaption>
+                </figure>
+                <figure>
+                    <img src="nocebo.jpg" alt="Nocebo">
+                    <figcaption>Nocebo (2012)</figcaption>
+                </figure>
+                <figure>
+                    <img src="va.jpg" alt="Viimeinen Atlantis">
+                    <figcaption>Viimeinen Atlantis <br> (2010)</figcaption>
+                </figure>
+                <figure>
+                    <img src="raja.jpg" alt="Raja">
+                    <figcaption>Raja (2008)</figcaption>
+                </figure>
+                <figure>
+                    <img src="ukk.jpg" alt="Uudet kymmenen käskyä">
+                    <figcaption>Uudet kymmenen käskyä (2006)</figcaption>
+                </figure>
+                <figure>
+                    <img src="stam1na.jpg" alt="Stam1na">
+                    <figcaption>Stam1na (2005)</figcaption>
+                </figure>
+            </div>
+        </main>
+        <script>
+            (function() {
+                var menu = document.querySelector('nav ul'),
+                    menulink = document.querySelector('#menuimg');
+
+                menulink.addEventListener('click', function(e) {
+                    menu.classList.toggle('active');
+                    e.preventDefault();
+                });
+            })();
+        </script>
+    </body>
+</html>
